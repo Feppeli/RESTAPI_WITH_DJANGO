@@ -9,3 +9,8 @@ class Teste(models.Model):
 
 class User(models.Model):
     name = models.CharField(unique=True, max_length=255)
+
+
+class Vendedor(models.Model):
+    name = models.CharField(max_length=255),
+    cpf = models.IntegerField(unique=True)
